@@ -1,31 +1,11 @@
-let myImage = document.querySelector('img');
-
-myImage.onclick = function () {
-    let mySrc = myImage.getAttribute('src');
-    if (mySrc === 'images/firefox-icon.png') {
-        myImage.setAttribute('src', 'images/firefox2.png');
-    } else {
-        myImage.setAttribute('src', 'images/firefox-icon.png');
-    }
-}
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
-myButton.onclick = function () {
-    setUserName();
+function createParagraph() {
+    let para = document.createElement('p');
+    para.textContent = 'You clicked the button!';
+    document.body.appendChild(para);
 }
 
-function setUserName() {
-    let myName = prompt('Please enter your name.');
-    if (!myName) {
-        setUserName();
-    } else {
-        localStorage.setItem('name', myName);
-        myHeading.textContent = 'Mozilla is cool, ' + myName;
-    }
-}
-if (!localStorage.getItem('name')) {
-    setUserName();
-} else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Mozilla is cool, ' + storedName;
+const buttons = document.querySelectorAll('button');
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', createParagraph);
 }

@@ -1,39 +1,41 @@
-html {
-    font-size: 10px;
-    font-family: 'ZCOOL KuaiLe', cursive;
-}
-
-h1 {
-    font-size: 60px;
-    text-align: center;
-}
-
-p, li {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-}
-
-html {
-    background-color: #00539F;
-}
-
 body {
-    width: 600px;
-    margin: 0 auto;
-    background-color: #FF9500;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
+    background-color: pink;
+}
+
+@media (min-width: 50em) {
+    body {
+        background-color: blue;
+    }
 }
 
 h1 {
-    margin: 0;
-    padding: 20px 0;
-    color: #00539F;
-    text-shadow: 3px 3px 1px black;
+    color: red;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
+a:link {
+    color: purple;
+}
+
+.manythings {
+    color: green;
+}
+
+#onething {
+    font-weight: bold;
+}
+
+* {
+    font-size: 125%;
+}
+
+.box p {
+    color: greenyellow;
+}
+
+.box p:first-child {
+    color: grey;
+}
+
+h1, h2, .intro {
+    text-decoration: underline dotted;
 }
