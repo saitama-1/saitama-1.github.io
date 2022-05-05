@@ -1,0 +1,15 @@
+:root {
+  --primary-color: orange;
+}
+html {
+  font-size: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.font {
+  font-size: 10vw;
+}
