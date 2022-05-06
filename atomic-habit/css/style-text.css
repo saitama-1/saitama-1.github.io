@@ -1,0 +1,9 @@
+.text-bold {
+  font-weight: bold;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-big {
+  font-size: 1.3em;
+}
