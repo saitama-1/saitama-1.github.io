@@ -1,0 +1,48 @@
+html {
+  font-size: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: arial;
+}
+.name {
+  font-size: 24px;
+  position: relative;
+  padding-left: 50px;
+  margin: 50px;
+}
+.name::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.line {
+  position: relative;
+  text-align: center;
+  margin: 0 10px;
+}
+.line::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.line__text {
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}

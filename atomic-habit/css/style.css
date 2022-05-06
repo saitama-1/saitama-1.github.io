@@ -1,0 +1,74 @@
+:root {
+  --background-color: grey;
+  --content-paper-color: white;
+  --content-text-color: black;
+  --bookmark-text-color: black;
+  --bookmark-background-color: white;
+}
+html {
+  font-size: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  /* font-family: "Outfit", sans-serif;
+  font-family: "Roboto", sans-serif; */
+  line-height: 2.3rem;
+}
+h1,
+h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+.content {
+  width: 100%;
+  min-height: 100rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 810px) {
+  .content {
+    width: 81rem;
+  }
+}
+.content__chapter-header {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+}
+.bookmark-bar {
+  display: none;
+}
+.content__page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--content-paper-color);
+  border: 1px solid black;
+  margin: 0 0 5px 0;
+  padding: 9rem 8rem;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 810px) {
+  .content__page {
+    padding: calc(1rem + 5vw) calc(1rem + 5vw);
+  }
+}
+p.para {
+  text-indent: 3rem;
+  margin: 0 0 5px 0;
+  text-align: justify;
+}
