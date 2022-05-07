@@ -4,27 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/style-text.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600;700;800;900&family=Outfit:wght@400;700&family=Roboto:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-text.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
     <title>Atomic Habbit</title>
   </head>
   <body>
     <div class="container">
-      <div class="bookmark-bar">book mark</div>
+      <div class="bookmark-bar">
+        <a href="#chuong-1" class="bookmark-bar__text text-bold"
+          >CHƯƠNG 1 - NHỮNG NGUYÊN TẮC CƠ BẢN</a
+        >
+        <a
+          href="#tai-sao-nhung-thoi-quen-nho-lai-tao-nen-mot-su-thay-doi-lon"
+          class="bookmark-bar__text"
+          >TẠI SAO NHỮNG THÓI QUEN NHỎ LẠI TẠO NÊN MỘT SỰ THAY ĐỔI LỚN</a
+        >
+        <a
+          href="#thoi-quen-co-the-la-dong-minh-hoac-co-the-la-ke-chong-lai-ban"
+          class="bookmark-bar__text"
+          >THÓI QUEN CÓ THỂ LÀ ĐỒNG MINH HOẶC CÓ THỂ LÀ KẺ CHỐNG LẠI BẠN</a
+        >
+        <a
+          href="#qua-trinh-tao-ra-su-khac-biet-dien-ra-ntn"
+          class="bookmark-bar__text"
+          >QUÁ TRÌNH TẠO RA SỰ KHÁC BIỆT DIỄN RA NHƯ THẾ NÀO?</a
+        >
+        <a href="#he-thong-cac-thoi-quen-nguyen-tu" class="bookmark-bar__text"
+          >HỆ THỐNG CÁC THÓI QUEN NGUYÊN TỬ</a
+        >
+        <a href="#chuong-2" class="bookmark-bar__text text-bold"
+          >CHƯƠNG 2 - CÁCH THỨC CÁC THÓI QUEN HÌNH THÀNH NÊN ĐẶC TÍNH / NHÂN
+          DẠNG CỦA BẠN (VÀ NGƯỢC LẠI)</a
+        >
+        <a
+          href="#tien-trinh-hai-buoc-de-thay-doi-dac-tinh-cua-ban"
+          class="bookmark-bar__text"
+          >TIẾN TRÌNH HAI BƯỚC ĐỂ THAY ĐỔI ĐẶC TÍNH CỦA BẠN</a
+        >
+        <a
+          href="#ly-do-that-su-tai-sao-thoi-quen-lai-quan-trong-den-vay"
+          class="bookmark-bar__text"
+        >
+          LÍ DO THẬT SỰ TẠI SAO THÓI QUEN LẠI QUAN TRỌNG ĐẾN VẬY[*THE REAL
+          REASON HABITS MATTER]
+        </a>
+      </div>
+      <div class="bookmark-bar__btn">
+        <i class="fa-solid fa-bars bookmark-bar__expand-icon"></i>
+        <i class="fa-solid fa-xmark bookmark-bar__collapse-icon"></i>
+      </div>
+
       <div class="content">
         <div class="content__page">
-          <h1>
-            <a href="#" class="content__chapter-header"
-              >CHƯƠNG 1 - NHỮNG NGUYÊN TẮC CƠ BẢN</a
-            >
-          </h1>
+          <div class="content__ruler content__ruler-top"></div>
+          <div class="content__ruler content__ruler-bottom"></div>
+          <h1 id="chuong-1">CHƯƠNG 1 - NHỮNG NGUYÊN TẮC CƠ BẢN</h1>
           <p class="para">
             Tại sao những thay đổi nhỏ lại tạo ra sự khác biệt lớn Sức mạnh đáng
             kinh ngạc của những thói quen nhỏ bé. Số phận của giới đua xe đạp
@@ -74,7 +118,7 @@
             đã tiếp tục tìm kiếm 1 phần trăm tiến bộ trong những lĩnh vực mà
             không ai ngờ tới. Họ thử nghiệm nhiều loại gel mát xa khác nhau để
             tìm ra loại giúp phục hồi cơ nhanh nhất. Họ còn thuê cả một bác sĩ
-            phẫu thuật để dạy cho từng vận động viên cáchrửa tay tốt nhất sao
+            phẫu thuật để dạy cho từng vận động viên cách rửa tay tốt nhất sao
             cho giảm thiểu các nguy cơ bị cảm lạnh. Họ quyết định loại gối và
             đệm đem lại giấc ngủ chất lượng nhất cho các tay đua. Họ thậm chí
             còn sơn lại nội thất chiếc xe chuyên chở đội tuyển thành màu trắng,
@@ -116,7 +160,9 @@
           </p>
         </div>
         <div class="content__page">
-          <h2>TẠI SAO NHỮNG THÓI QUEN NHỎ LẠI TẠO NÊN MỘT SỰ THAY ĐỔI LỚN</h2>
+          <h2 id="tai-sao-nhung-thoi-quen-nho-lai-tao-nen-mot-su-thay-doi-lon">
+            TẠI SAO NHỮNG THÓI QUEN NHỎ LẠI TẠO NÊN MỘT SỰ THAY ĐỔI LỚN
+          </h2>
           <p class="para">
             Chúng ta rất dễ bị đánh giá quá lên tầm quan trọng của một khoảnh
             khắc đặc biệt và xem nhẹ giá trị của những tiến bộ nhỏ hàng ngày.
@@ -138,8 +184,9 @@
             lại tệ hơn 1 phần trăm liên tục trong vòng 1 năm, bạn chắc chắn sẽ
             về lại con số 0. Việc nào bắt đầu bằng những thắng lợi nho nhỏ hoặc
             những thất bại không đáng kể thì sẽ dần dần được cải thiện tốt lên.
-            1% cải thiện mỗi ngày Những thói quen chính là lãi suất kép của việc
-            tự cải thiện bản thân.
+            1% cải thiện mỗi ngày
+            <span class="text-italic">Những thói quen</span> chính là lãi suất
+            kép của việc tự cải thiện bản thân.
           </p>
           <p class="para">
             Giống như cách đồng tiền sinh sôi nhiều lần nhờ lãi suất kép, các
@@ -159,7 +206,7 @@
             Nếu bạn học tiếng Trung một tiếng vào tối nay, bạn vẫn không thực sự
             học ngôn ngữ đó. Chúng ta tạo ra một vài thay đổi nhưng kết quả
             thường không xuất hiện nhanh chóng và chúng ta lại trượt lại về thói
-            quen cũ. Thật không may là quá trình chuyển biến chậmchạp này cũng
+            quen cũ. Thật không may là quá trình chuyển biến chậm chạp này cũng
             làm cho chúng ta dễ dàng quay trở lại với những thói quen không tốt.
             Nếu bạn ăn một bữa ăn không hợp lý ngày hôm nay thì cũng chẳng thấy
             có gì ảnh hưởng hết. Nếu bạn làm việc trễ và bỏ bê gia đình thì họ
@@ -182,7 +229,7 @@
             New York.
           </p>
           <p class="para">
-            Chỉ một thay đổi nhỏ không đáng kể lúc cất cánh - mũi mãnh bay chỉ
+            Chỉ một thay đổi nhỏ không đáng kể lúc cất cánh - mũi máy bay chỉ
             lệch đi có vài feet - vậy mà bạn đã bay dọc cả nước Mỹ và hạ cánh
             tại địa điểm cách điểm đến của bạn hàng trăm dặm. Tương tự như vậy,
             một thay đổi tưởng chừng nhỏ xíu trong thói quen hàng ngày của bạn
@@ -234,7 +281,10 @@
           </p>
         </div>
         <div class="content__page">
-          <p class="para text-italic">
+          <p
+            class="para text-italic"
+            id="thoi-quen-co-the-la-dong-minh-hoac-co-the-la-ke-chong-lai-ban"
+          >
             THÓI QUEN CÓ THỂ LÀ ĐỒNG MINH HOẶC CÓ THỂ LÀ KẺ CHỐNG LẠI BẠN
           </p>
           <p class="para text-bold">
@@ -295,7 +345,10 @@
             bờ và sự giận giữ bùng nổ như pháo bông vậy
           </p>
         </div>
-        <div class="content__page">
+        <div
+          class="content__page"
+          id="qua-trinh-tao-ra-su-khac-biet-dien-ra-ntn"
+        >
           <h2>QUÁ TRÌNH TẠO RA SỰ KHÁC BIỆT DIỄN RA NHƯ THẾ NÀO?</h2>
           <p class="para">
             Hãy tưởng tượng một khối nước đá được đặt trên bàn ngay trước mặt
@@ -325,7 +378,7 @@
             đoạn chán nản [*Từ nguyên gốc: Valley of Disappointment]. Bạn mong
             đợi rằng sẽ thấy sự tiến bộ rõ rệt và rồi thấy thật thất vọng vì
             những sự thay đổi dường như không có hiệu quả gì sau nhiều ngày,
-            nhiều tuần, nhiều tháng thực hiện.Điều này khác với việc bạn đang
+            nhiều tuần, nhiều tháng thực hiện. Điều này khác với việc bạn đang
             làm mà không có mục tiêu rõ ràng. Đó là điều tất yếu của một quá
             trình tích lũy: những thành quả to lớn cuối cùng còn chờ ở phía sau.
             Đây cũng là một trong những lý do mà tại sao không dễ dàng trong
@@ -389,16 +442,18 @@
             mỗi ngày vào một giờ nhất định. Nhưng điều gì quyết định việc liệu
             chúng ta có kiên trì thực hiện thói quen đủ lâu để sống sót vượt qua
             được trạng thái ổn định của những khả năng tiềm ẩn và đạt được bước
-            đột phá? Hãy quên mục tiêu đi, thay vào đó tập trung vào hệ thống Có
-            một niềm tin phổ biến rằng cách tốt nhất để đạt được mọi điều mình
-            mong muốn trong cuộc sống - như giữ phom dáng chuẩn, kinh doanh
-            thành công, sống thoải mái hơn, ít lo âu hơn, dành nhiều thời gian
-            hơn cho gia đình, bạn bè - thi cần phải đề ra những mục tiêu cụ thể
-            và khả thi. Tôi cũng đã xây dựng những thói quen của mình theo cách
-            đó trong rất nhiều năm. Mỗi một thói quen đi liền với một mục tiêu
-            cần đạt tới. Tôi đề ra những mục tiêu đạt điểm cao ở trường, đạt đến
-            số kg mong muốn trong tập gym, kiếm được bao lợi nhuận bản thân mong
-            muốn trong kinh doanh.
+            đột phá? Hãy quên mục tiêu đi, thay vào đó tập trung vào hệ thống
+            <span class="text-italic"
+              >Có một niềm tin phổ biến rằng cách tốt nhất để đạt được mọi điều
+              mình mong muốn trong cuộc sống</span
+            >
+            - như giữ phom dáng chuẩn, kinh doanh thành công, sống thoải mái
+            hơn, ít lo âu hơn, dành nhiều thời gian hơn cho gia đình, bạn bè -
+            thì cần phải đề ra những mục tiêu cụ thể và khả thi. Tôi cũng đã xây
+            dựng những thói quen của mình theo cách đó trong rất nhiều năm. Mỗi
+            một thói quen đi liền với một mục tiêu cần đạt tới. Tôi đề ra những
+            mục tiêu đạt điểm cao ở trường, đạt đến số kg mong muốn trong tập
+            gym, kiếm được bao lợi nhuận bản thân mong muốn trong kinh doanh.
           </p>
           <p class="para">
             <span class="text-big">Cũng</span> có một vài mục tiêu thành công,
@@ -442,10 +497,10 @@
             Tôi nghĩ là có. Mục tiêu trong bất kỳ môn thể thao nào chính là
             giành điểm cao nhất lúc chung cuộc, nhưng thật ngớ ngẩn nếu như cả
             buổi thi đấu chỉ nhìn chăm chăm vào bảng điểm số. Cách duy nhất để
-            dành chiếnthắng thực sự là tiến bộ hơn mỗi ngày. Người đã từng 3 lần
-            vô địch giải Super Bowl Bill Walsh đã phát biểu, "Điểm số sẽ tự lo
-            liệu cho chính nó." Điều này cũng đúng trong các lĩnh vực khác của
-            cuộc sống.
+            dành chiến thắng thực sự là tiến bộ hơn mỗi ngày. Người đã từng 3
+            lần vô địch giải Super Bowl Bill Walsh đã phát biểu, "Điểm số sẽ tự
+            lo liệu cho chính nó." Điều này cũng đúng trong các lĩnh vực khác
+            của cuộc sống.
           </p>
           <p class="para">
             Nếu bạn muốn đạt kết quả tốt hơn, hãy quên việc đề ra các mục tiêu
@@ -551,7 +606,9 @@
           </p>
         </div>
         <div class="content__page">
-          <h2>HỆ THỐNG CÁC THÓI QUEN NGUYÊN TỬ</h2>
+          <h2 id="he-thong-cac-thoi-quen-nguyen-tu">
+            HỆ THỐNG CÁC THÓI QUEN NGUYÊN TỬ
+          </h2>
           <p class="para">
             Nếu bạn đang gặp khó khăn trong việc thay đổi các thói quen của bản
             thân thì vấn đề không nằm ở bạn. Vấn đề nằm ở hệ thống của bạn.
@@ -615,10 +672,478 @@
           </ul>
         </div>
         <div class="content__page">
-          <h1>
-            CHƯƠNG 2 CÁCH THỨC CÁC THÓI QUEN HÌNH THÀNH NÊN ĐẶC TÍNH /NHÂN DẠNG
-            CỦA BẠN (VÀ NGƯỢC LẠI)
+          <h1 id="chuong-2">
+            CHƯƠNG 2<br />CÁCH THỨC CÁC THÓI QUEN HÌNH THÀNH NÊN ĐẶC TÍNH / NHÂN
+            DẠNG CỦA BẠN (VÀ NGƯỢC LẠI)
           </h1>
+          <p class="para">
+            Tại sao chúng ta lại dễ dàng lặp lại các thói quen xấu và rất khó
+            khăn trong việc hình thành những thói quen tốt? Rất hiếm có điều nào
+            có ảnh hưởng mạnh mẽ lên cuộc đời bạn hơn là việc cải thiện thói
+            quen thường ngày. Nó giống như việc cũng thời gian nay năm tới bạn
+            cũng sẽ đang làm một việc tương tự như này hơn là làm một cái gì đó
+            khá khẩm hơn. Thường thì chúng ta gặp rất nhiều khó khăn trong việc
+            duy trì những thói quen tốt trong nhiều ngày, thậm chí ngay cả với
+            nỗ lực chân chính và động lực nhất thời mạnh mẽ.
+          </p>
+          <p class="para">
+            Thói quen giống như việc luyện tập, như thiền, ghi chép và nấu ăn,
+            kiểu gì một hay hai ngày chúng ta cũng phải làm một lần, sau rồi
+            thành quen. Tuy nhiên một khi chúng ta đã tạo dựng được thói quen,
+            dường như chúng sẽ gắn chặt với chúng ta mãi mãi - đặc biệt là mấy
+            cái thói quen không mong muốn. Bất chấp những dự định tốt đẹp nhất
+            của mình, chúng ta dường như không có cách nào phá vỡ những thói
+            quen xấu như ăn đồ ăn nhanh, xem tivi quá nhiều, tính hay lần lữa và
+            hút thuốc. Thay đổi thói quen là một thách thức bởi hai lí do: (1)
+            chúng ta đang cố thay đổi sai đối tượng và (2) chúng ta cố thay đổi
+            thói quen sai cách. Trong chương này, tôi sẽ phân tích lí do đầu
+            tiên. Chương tiếp theo tôi sẽ phân tích lí do thứ hai. Lỗi đầu tiên
+            của chúng ta là chúng ta đang cố thay đổi sai đối tượng. Để cho dễ
+            hiểu những điều tôi muốn nói, hãy giả dụ rằng có ba mức thay đổi có
+            thể xảy ra. Bạn có thể tưởng tượng chúng như những lớp vỏ củ hành
+            tây vậy.
+          </p>
+          <p class="para">
+            <span class="text-bold">Lớp đầu tiên là thay đổi kết quả.</span> Ở
+            cấp độ này, chúng ta tập trung vào thay đổi kết quả như: giảm cân,
+            xuất bản một cuốn sách, giành giải vô địch. Hầu hết các mục tiêu bạn
+            đề ra có liên quan đến cấp độ này.
+          </p>
+          <p class="para">
+            <span class="text-bold"
+              >Lớp thứ hai là thay đổi tiến trình của bạn.</span
+            >
+            Cấp độ này liên quan đến việc thay đổi các thói quen và hệ thống của
+            bạn: áp dụng lịch tập gym mới, bày trí dọn dẹp lại bàn làm việc để
+            có năng lượng làm việc tích cực hơn, thực hành thiền. Hầu hết các
+            thói quen của bạn đều liên quan đến cấp độ này.
+          </p>
+          <p class="para">
+            <span class="text-bold"
+              >Lớp thứ ba và cũng là lớp trong cùng là thay đổi đặc tính của
+              bạn</span
+            >. Cấp độ này liên quan đến việc thay đổi những niềm tin của bạn:
+            cách nhìn nhận về thế giới bên ngoài, cách nhìn nhận về bản thân,
+            cách bạn đánh giá bản thân và những người khác. Hầu hết các niềm
+            tin, giả định, và thành kiến của bạn đều liên quan đến cấp độ này.
+            Kết quả là những gì mà bạn đạt được. Tiến trình là những gì mà bạn
+            thực hiện. Đặc tính là những niềm tin của bạn. Khi tiến hành xây
+            dựng các thói quen lâu dài - khi tiến hành xây dựng hệ thống của
+            những tiến bộ 1% - vấn đề không phải là cấp độ này tốt hơn hay kém
+            hơn cấp độ kia
+          </p>
+          <p class="para">
+            Tất cả các cấp độ thay đổi đều hữu ích theo cách riêng của chúng.
+            Vấn đề là thay đổi theo hướng nào. Rất nhiều người bắt đầu tiến
+            trình thay đổi thói quen bằng cách tập trung vào điều họ muốn đạt
+            được. Điều này sẽ hướng chúng ta tới những thói quen dựa trên mục
+            tiêu. Thay vào đó việc cần làm là xây dựng những thói quen dựa trên
+            đặc tính của mỗi người. Bằng cách tiếp cận này, chúng ta bắt đầu tập
+            trung hướng vào con người mà chúng ta mong muốn trở thành. Hãy thử
+            tưởng tượng hai người cùng đang cai thuốc lá. Khi họ được mời một
+            điếu thuốc, người đầu tiên nói, "Không cảm ơn. Tôi đang cố gắng cai
+            thuốc lá."
+          </p>
+          <p class="para">
+            Câu trả lời này nghe thì có vẻ ổn, nhưng người này vẫn còn giữ niềm
+            tin rằng họ là một người hút thuốc lá và đang cố gắng làm mọi điều
+            để cai được thuốc. Họ hi vọng rằng hành vi của họ sẽ thay đổi trong
+            khi vẫn tiếp tục tin như vậy. Người thứ hai từ chối và nói, "Không
+            cảm ơn. Tôi không hút thuốc." Câu trả lời ở đây có sự khác biệt nhỏ,
+            nhưng lời khẳng định này báo hiệu một bước chuyển trong tính cách.
+            Hút thuốc đã trở thành quá khứ, không phải hiện tại. Họ không còn
+            nhìn nhận bản thân như một người hút thuốc. Hầu như tất cả mọi người
+            đều không nghĩ tới việc thay đổi đặc tính khi họ vạch ra mục tiêu
+            cải thiện gì đó. Họ chỉ đơn giản nghĩ rằng, "Tôi muốn có dáng người
+            cân đối (kết quả) và nếu tôi kiên trì với chế độ ăn kiêng này, tôi
+            sẽ có dáng người chuẩn (quá trình)."
+          </p>
+          <p class="para">
+            Họ đặt ra mục tiêu và quyết định những điều họ nên làm để đạt được
+            mục tiêu đã đề ra mà không hề cân nhắc tới những niềm tin dẫn họ tới
+            những hành động đó. Họ không bao giờ thay đổi cách họ nhìn nhận bản
+            thân, và họ không nhận ra rằng những cách nhìn nhận cũ có thể huỷ
+            hoại các kế hoạch mới nhằm thay đổi của họ. Phía sau mỗi một hệ
+            thống của các hành động là một hệ thống các niềm tin. Hệ thống của
+            chế độ dân chủ được dựa trên các niềm tin về tự do, nguyên tắc theo
+            đa số quyết định, và công bằng xã hội. Hệ thống của chế độ độc tài
+            lại có một hệ thống niềm tin khác biệt như chế độ chuyên quyền và kỷ
+            luật nghiêm khắc. Bạn có thể tưởng tượng rằng có nhiều cách để vận
+            động nhiều người ủng hộ chế độ cộng hoà hơn nữa, nhưng thay đổi
+            trong hành vi kiểu này sẽ không nhổ tận gốc của chế độ độc tài. Đó
+            không phải là đặc tính chung của cả hệ thống. Việc bỏ phiếu là một
+            hành vi không khả thi với một hệ thống các niềm tin nhất định. Khuôn
+            mẫu tương tự cũng tồn tại ngay cả khi chúng ta đang thảo luận về các
+            cá nhân, các tổ chức, hay cả xã hội. Tồn tại một hệ thống các niềm
+            tin và giả định định hình nên các hệ thống, một đặc tính phía sau
+            các thói quen.
+          </p>
+        </div>
+        <div class="content__page">
+          <p class="para">
+            Những hành vi không phù hợp với quan niệm bản thân thì sẽ không duy
+            trì được lâu dài. Bạn có thể mong muốn mình có nhiều tiền hơn, nhưng
+            nếu bạn tự định nghĩa bản thân là một người hưởng thụ nhiều hơn là
+            làm ra tiền, và sau đó bạn sẽ tiếp tục thiên hướng tiêu nhiều hơn số
+            tiền kiếm được. Bạn có thể mong muốn có sức khoẻ tốt hơn, nhưng nếu
+            bạn tiếp tục ưu tiên sự thoải mái hơn là hoàn thành việc cần làm,
+            bạn sẽ chết chìm trong sự thư giãn mà lơ là việc tập luyện. Rất khó
+            để thay đổi thói quen nếu bạn không thay đổi hệ thống niềm tin ẩn
+            bên dưới, chính những niềm tin này khiến bạn tiếp tục lặp lại những
+            hành vi cũ.
+          </p>
+          <p class="para">
+            Bạn có một mục tiêu và kế hoạch mới, nhưng bạn lại không thay đổi
+            chính con người mình. Câu chuyện của Brian Clark, một doanh nhân đến
+            từ Boulder, Colorado, là một ví dụ thuyết phục. "Theo như những gì
+            mà tôi nhớ được, tôi thường có thói quen gặm móng tay", Clark cho
+            tôi biết. "Việc này xuất phát từ thói quen lo lắng khi tôi còn trẻ,
+            và rồi nó biến thành một thói quen nhếch nhác ngoài mong đợi. Một
+            ngày nọ tôi quyết tâm ngừng việc cắn móng tay cho tới khi móng tay
+            mọc dài lên một chút. Bằng chính nỗ lực mạnh mẽ tập trung của bản
+            thân, tôi đã thành công." Sau đó, Clark còn làm được một điều đáng
+            kinh ngạc. "Tôi đề nghị vợ mình hẹn lịch cắt sửa móng tay lần đầu
+            tiên trong đời cho mình," anh cho biết. "Tôi có suy nghĩ rằng nếu
+            tôi bắt đầu chi tiền cho việc làm móng, tôi sẽ không gặm chúng nữa.
+            Và việc làm này hiệu quả thật, nhưng không phải vì lí do tiền bạc.
+          </p>
+          <p class="para">
+            Đúng là người thợ làm móng đã giúp những ngón tay của tôi trông rất
+            thẩm mĩ sau lần làm móng đầu tiên. Người thợ làm móng cũng cho biết
+            nếu tôi không cắn móng tay thì móng tay tôi thuộc dạng khoẻ và hấp
+            dẫn. Đột nhiên tôi cảm thấy tự hào về những cái móng tay của mình.
+            Và dù điều này diễn ra ngoài mong đợi nhưng nó lại làm mọi thứ khác
+            hẳn. Kể từ đó tôi không còn gặm móng tay thêm lần nào nữa, thậm chí
+            ngay cả trong những tình huống căng thẳng, tồi tệ. Và lý do chính là
+            vào thời điểm hiện tại tôi rất tự hào về những cái móng tay của
+            mình."Dạng thức cơ bản của động lực thúc đẩy bên trong là khi một
+            thói quen trở thành một phần đặc tính của bạn. Nó giống như việc bạn
+            nói rằng Tôi là kiểu người thích điều này.
+          </p>
+          <p class="para">
+            Việc này khác với cách nói Tôi là kiểu người như vậy đấy. Bạn càng
+            tự hào về những mặt thuộc về đặc tính của mình bao nhiêu, bạn càng
+            có nhiều động lực để duy trì thói quen gắn liền với những mặt này
+            bấy nhiêu. Nếu bạn tự hào về mái tóc của mình, bạn sẽ phát triển tất
+            cả các thói quen liên quan đến việc chăm sóc mái tóc. Nếu bạn tự hào
+            về bắp tay của mình, bạn sẽ bảo đảm rằng mình không bao giờ bỏ qua
+            phần tập luyện cho phần thân trên.
+          </p>
+          <p class="para">
+            Nếu bạn tự hào về chiếc khăn mình tự đan, bạn sẽ dễ dàng hơn trong
+            việc dành vài giờ mỗi tuần cho việc đan lát. Một khi cảm thấy tự hào
+            về một điều gì đó, bạn sẽ chiến đấu quyết liệt để duy trì các thói
+            quen gắn liền với nó. Thay đổi hành vi thực chất là thay đổi đặc
+            tính. Bạn có thể bắt đầu một thói quen bởi vì có động lực thúc đẩy,
+            nhưng chỉ có duy nhất một lí do để bạn duy trì nó là khi nó trở
+            thành một phần của đặc tính bên trong bạn. Ai cũng có thể thuyết
+            phục bản thân đến phòng tập hoặc ăn uống lành mạnh một hoặc đôi lần,
+            nhưng nếu bạn không thay đổi niềm tin phía sau hành vi, sẽ rất khó
+            để duy trì trong một thời gian dài. Sự cải thiện chỉ là tạm thời cho
+            đến khi chúng trở thành một phần của bạn
+          </p>
+          <ul class="content__list">
+            <li class="content__list-item">
+              Mục tiêu không phải là đọc sách, mục tiêu là trở thành người đọc.
+            </li>
+            <li class="content__list-item">
+              Mục tiêu không phải là chạy marathon, mục tiêu là trở thành một
+              vận động viên
+            </li>
+            <li class="content__list-item">
+              Mục tiêu không phải là học cách chơi một nhạc cụ, mục tiêu là trở
+              thành một nhạc công
+            </li>
+          </ul>
+          <p class="para">
+            Hành vi thường là sự phản chiếu các đặc tính của bạn. Những gì bạn
+            làm chính là dấu hiệu cho kiểu người mà bạn tin rằng bạn là - cả vô
+            thức lẫn có ý thức. [*Các khái niệm vô thức, tiềm thức được sử dụng
+            để miêu tả trạng thái thiếu vắng sự nhận biết, sự tỉnh táo hay suy
+            nghĩ. Thậm chí ngay cả trong các lĩnh vực học thuật, những từ này có
+            thể dùng hoán đổi cho nhau mà không có sự khác biệt nhiều. Vô thức
+            là lĩnh vực mà tôi sẽ đề cập đến trong cuốn sách này bởi vì tính bao
+            quát của nó. Nó bao trùm cả các quá trình hoạt động của tâm lý thứ
+            mà chúng ta không bao giờ có thể tiếp cận một cách rõ ràng và những
+            khoảnh khắc chỉ đơn giản là khi chúng ta không chú ý tới những thứ
+            xung quanh ta. Vô thức là những điều mà bạn không tư duy được một
+            cách rõ ràng, có ý thức].
+          </p>
+          <p class="para">
+            Các nhà nghiên cứu đã chỉ ra rằng một khi một người tin tưởng vào
+            một khía cạnh nhất định nào đó thuộc về đặc tính, họ thường có xu
+            hướng hành động theo qui chuẩn của niềm tin đó. Ví dụ những người có
+            đặc tính thiên về là "một người bỏ phiếu" thường có xu hướng bỏ
+            phiếu bầu hơn là những người chỉ đơn giản coi việc "bỏ phiếu" như là
+            một hành động mà họ muốn thể hiện.
+          </p>
+          <p class="para">
+            Tương tự như vậy, những người đã hợp nhất được việc tập luyện với
+            đặc tính của mình thì họ không cần phải thuyết phục bản thân luyện
+            tập. Làm điều đúng đắn thật dễ dàng. Tóm lại khi cách hành xử và đặc
+            tính của bạn hoàn toàn tương đồng với nhau, bạn sẽ không còn phải
+            theo đuổi việc thay đổi hành vi nữa. Bạn chỉ đơn giản là hành động
+            đúng như kiểu người mà bạn tin rằng bản thân mình là.
+          </p>
+          <p class="para">
+            Giống như mọi khía cạnh của việc hình thành thói quen, việc này cũng
+            là một con dao hai lưỡi. Mặt tốt của nó là khi việc thay đổi đặc
+            tính của bạn có thể trở thành một nguồn lực to lớn trong việc cải
+            thiện bản thân. Mặt xấu của nó là, việc thay đổi đặc tính có thể trở
+            thành một lời nguyền rủa. Một khi bạn thích ứng được với một đặc
+            tính, sự bám chấp của bạn vào đặc tính này sẽ dễ dàng tác động đến
+            khả năng thay đổi của bạn.
+          </p>
+          <p class="para">
+            Rất nhiều người đi hết cả cuộc đời trong trạng thái mơ màng thiếu ý
+            thức, tuân theo một cách mù quáng các qui tắc tiêu chuẩn gắn liền
+            với đặc tính của họ. "Tôi rất tệ trong việc xác định phương hướng."
+            "Tôi không phải là người có thể thức dậy sớm và hoạt động vào buổi
+            sáng." "Tôi rất tệ trong việc nhớ tên mọi người." "Tôi là người luôn
+            luôn trễ giờ." "Tôi là một kẻ mù công nghệ." "Tôi cực kỳ dốt toán."
+            ... Và một tá những điều kiểu như vậy nữa. Khi bạn lặp lại câu
+            chuyện đó với bản thân mình trong nhiều năm, bạn sẽ dễ dàng bị sa
+            vào lối mòn trong suy nghĩ và chấp nhận rằng đó là sự thật. Và đến
+            một lúc, bạn bắt đầu từ chối những hành động nhất định bởi vì "Đó
+            không phải là tôi". Tồn tại một áp lực nội tại nhằm duy trì hình ảnh
+            bản thân và hành xử theo một cách nhất quán với những niềm tin của
+            bạn
+          </p>
+          <p class="para">
+            Bạn tìm kiếm các con đường bạn có thể tránh được việc mâu thuẫn/xung
+            đột với bản thân. Suy nghĩ và hành động gắn với đặc tính càng chặt
+            thì càng khó thay đổi. Sẽ dễ dàng, thoải mái khi tin vào những niềm
+            tin văn hóa (đặc tính cộng đồng) hoặc làm những gì biểu đạt được
+            hình ảnh bản thân (đặc tính cá nhân), cho dù nó có sai đi chăng nữa.
+            Rào cản lớn nhất đối với những thay đổi tích cực tại mọi cấp độ - cá
+            nhân, nhóm, cộng đồng - chính là xung đột đặc tính. Các thói quen
+            tốt có thể đem lại cảm giác đúng đắn, hợp lý nhưng nếu chúng xung
+            đột với đặc tính của bạn, bạn sẽ thất bại trong việc biến chúng
+            thành hành động cụ thể.
+          </p>
+          <p class="para">
+            Đến một ngày nào đó bạn có lẽ sẽ phải vật lộn với những thói quen
+            của mình bởi vì bạn quá bận rộn, hoặc quá mệt mỏi, hoặc quá phấn
+            khích, hoặc bởi muôn vàn lí do khác. Tuy nhiên về lâu về dài lí do
+            thực sự của việc bạn thất bại trong việc duy trì thói quen là bởi
+            bạn đã để hình ảnh cá nhân xen vào. Đây là lí do giải thích tại sao
+            bạn không thể gắn bó quá lâu với một phiên bản thuộc về đặc tính cá
+            nhân. Sự tiến bộ yêu cầu việc biết buông những gì mà mình đã học
+            được từ trước. Để trở thành phiên bản tốt nhất của chính mình bạn
+            cần phải không ngừng thay đổi những niềm tin của bản thân, và nâng
+            cấp, và mở rộng các đặc tính.
+          </p>
+          <p class="para">
+            Vậy một câu hỏi quan trọng được đặt ra là: Nếu các niềm tin và quan
+            điểm về thế giới của bạn có vai trò quan trọng đến như vậy đối với
+            cách hành xử của bạn, vậy chúng hình thành đầu tiên từ đâu? Chính
+            xác là các đặc tính của bạn được hình thành theo cách nào? Và bằng
+            cách nào bạn làm nổi bật các khía cạnh mới thuộc về đặc tính có ích
+            cho bạn và dần dần xóa bỏ những phần gây cản trở cho bạn?
+          </p>
+        </div>
+        <div class="content__page">
+          <h2 id="tien-trinh-hai-buoc-de-thay-doi-dac-tinh-cua-ban">
+            TIẾN TRÌNH HAI BƯỚC ĐỂ THAY ĐỔI ĐẶC TÍNH CỦA BẠN
+          </h2>
+          <p class="para">
+            Đặc tính của bạn được thể hiện qua các thói quen. Bạn không được
+            sinh ra với những niềm tin được định sẵn. Mỗi một niềm tin bao gồm
+            cả những niềm tin về chính bản thân bạn được tiếp thu và điều kiện
+            hóa thông qua kinh nghiệm [*Thực ra có một vài khía cạnh của đặc
+            tính có xu hướng không thay đổi theo thời gian - giống như việc xác
+            định ai cao, ai thấp vậy. Nhưng dù cho có nhiều hơn nữa những phẩm
+            chất và đặc điểm cố định thì việc bạn nhìn nhận dưới ánh sáng tích
+            cực hay tiêu cực đều được quyết định bởi những kinh nghiệm trong đời
+            bạn].
+          </p>
+          <p class="para">
+            Nói một cách chính xác hơn, thói quen chính là cách mà bạn thể hiện
+            đặc tính của mình. Khi bạn gấp gọn chăn gối mỗi ngày khi rời giường,
+            bạn thể hiện đặc tính mình là một người ngăn nắp. Khi bạn viết lách
+            mỗi ngày, bạn thể hiện đặc tính mình là một người sáng tạo. Khi bạn
+            tập luyện mỗi ngày, bạn thể hiện đặc tính mình là một người ưa thể
+            thao. Bạn càng làm đi làm lại một hành vi nhiều bao nhiêu thì bạn
+            càng củng cố thêm đặc tính gắn liền với hành vi đó nhiều bấy nhiêu.
+            Thực tế từ đặc tính /identity khởi nguồn được ghép từ hai từ trong
+            tiếng Latin, từ essentitas, có nghĩa là tồn tại/bản thể và từ
+            identitem, có nghĩa là được lặp đi lặp lại
+          </p>
+          <p class="para">
+            Đặc tính của bạn theo nghĩa đen có nghĩa là "bản thể được lặp đi lặp
+            lại." Cho dù đặc tính hiện giờ của bạn là gì, bạn chỉ tin tưởng nó
+            bởi vì bạn có bằng chứng rõ ràng. Nếu bạn đi nhà thờ mỗi Chủ nhật
+            trong vòng hai mươi năm, bạn có bằng chứng về việc bạn là một người
+            theo tôn giáo. Nếu bạn học môn sinh học mỗi tối, bạn có bằng chứng
+            về việc bạn là một người chăm chỉ. Nếu bạn tới phòng tập gym ngay cả
+            khi trời tuyết rơi, bạn có bằng chứng về việc bạn là người yêu thích
+            tập luyện. Càng nhiều bằng chứng liên quan tới một niềm tin, bạn
+            càng tin vào nó mạnh mẽ hơn.
+          </p>
+          <p class="para">
+            Trong suốt những năm tháng trước đây tôi chưa từng nghĩ đến việc
+            mình có thể viết sách. Nếu bạn hỏi bất kỳ giáo viên trung học hay
+            giáo sư đại học nào đã từng dạy tôi, bạn sẽ nhận được câu trả lời từ
+            các thầy cô rằng về khoản viết lách tôi chỉ ở mức trung bình: chắc
+            chắn không phải là người có tài năng nổi bật gì. Khi tôi bắt đầu sự
+            nghiệp viết lách của mình, trong năm đầu tiên tôi đăng bài viết mới
+            vào mỗi thứ hai và thứ năm hàng tuần. Khi các bằng chứng rõ ràng hơn
+            thì đặc tính là một nhà văn cũng thể hiện rõ hơn. Xuất phát điểm tôi
+            không phải là một nhà văn. Tôi trở thành nhà văn thông qua những
+            thói quen của bản thân. Tất nhiên các thói quen không phải là những
+            hành động duy nhất ảnh hưởng lên đặc tính của bạn, nhưng thông qua
+            ưu điểm là sự thường xuyên chúng thường là những nhân tố có tác động
+            quan trọng nhất.
+          </p>
+          <p class="para">
+            Mỗi một trải nghiệm trong cuộc sống sẽ thay đổi hình ảnh bản thân
+            bạn, nhưng nó không phải là việc bạn coi mình là một cầu thủ bóng đá
+            bởi bạn sút một quả bóng hay là một họa sĩ bởi vì bạn nguệch ngoạc
+            ra một bức tranh. Tuy nhiên, khi bạn lặp lại những hành động này,
+            tính hiển nhiên sẽ tăng dần và hình ảnh bản thân bạn sẽ bắt đầu thay
+            đổi. Ảnh hưởng của những trải nghiệm chỉ xảy ra một lần với mỗi
+            người thường có xu hướng mờ nhòa dần trong khi ảnh hưởng của những
+            thói quen lại được củng cố chắc chắn theo thời gian, điều này có ý
+            nghĩa rằng là các thói quen của bạn đóng góp chủ yếu những chứng cứ
+            định hình nên đặc tính của bạn
+          </p>
+          <p class="para">
+            Theo cách này, quá trình xây dựng thói quen thực chất là quá trình
+            trở thành chính bạn. Đây là một tiến trình tiến hóa dần dần. Chúng
+            ta không thay đổi bằng cách vỗ tay một cái và quyết định luôn chúng
+            ta là một con người hoàn toàn mới. Chúng ta thay đổi từng chút một,
+            ngày qua ngày, từ thói quen này sang thói quen khác. Chúng ta trải
+            nghiệm sự thay đổi bản thân một cách liên tục không ngừng nghỉ. Mỗi
+            thói quen là một lời gợi ý: "Này có lẽ đây là tôi đấy." Nếu bạn đọc
+            xong một cuốn sách, có thể sau đó bạn lại trở thành kiểu người thích
+            đọc sách. Nếu bạn tới phòng tập gym, có thể sau đó bạn lại trở thành
+            kiểu người thích tập thể thao
+          </p>
+          <p class="para">
+            Nếu bạn tập chơi guitar, có thể bạn sẽ trở thành kiểu người thích âm
+            nhạc. Mỗi một hành động bạn thực hiện sẽ bỏ một phiếu cho cho kiểu
+            người mà bạn mong muốn trở thành. Không có trường hợp cá biệt đơn lẻ
+            nào có thể thay đổi được niềm tin của bạn. Một khi những lá phiếu
+            bầu nhiều lên thì cũng đồng nghĩa với việc tăng lên tính hiển nhiên
+            của đặc tính mới của bạn. Đây là một trong những lý do giải thích
+            tại sao sự khác biệt đầy ý nghĩa lại không yêu cầu sự thay đổi quyết
+            liệt. Những thói quen nhỏ bé có thể đem lại những khác biệt lớn lao
+            bằng việc cung cấp tính hiển nhiên của một đặc tính mới. Và nếu một
+            thay đổi có ý nghĩa thì nó thực sự lớn lao.
+          </p>
+          <p class="para">
+            Đây chính là nghịch lý của việc thực hiện những cải thiện nhỏ bé.
+            Nói một cách tổng quan, bạn có thể nhận ra rằng các thói quen chính
+            là con đường dẫn tới sự thay đổi đặc tính của bạn. Cách thực tiễn
+            nhất để thay đổi con người bạn chính là thay đổi những gì bạn làm.
+          </p>
+          <ul class="content__list">
+            <li class="content__list-item">
+              Mỗi một lần bạn viết xong một trang, bạn là một nhà văn. - Mỗi một
+              lần bạn tập đàn violin, bạn là một nhạc công
+            </li>
+            <li class="content__list-item">
+              Mỗi một lần bạn bắt đầu luyện tập, bạn là một vận động viên
+            </li>
+            <li class="content__list-item">
+              Mỗi lần bạn khích lệ đồng nghiệp, bạn là một người lãnh đạo.
+            </li>
+            <li class="content__list-item">
+              Mỗi một thói quen không chỉ đem lại kết quả mà còn dạy cho bạn một
+              điều còn quan trọng hơn gấp nhiều lần: hãy tin tưởng bản thân
+              mình.
+            </li>
+          </ul>
+          <p class="para">
+            Bạn bắt đầu tin rằng bạn có thể thực sự làm tốt những việc này. Khi
+            những lá phiếu nhiều hơn và tính hiển nhiên bắt đầu thay đổi, câu
+            chuyện mà bạn kể với bản thân cũng bắt đầu thay đổi theo. Tất nhiên
+            là việc này cũng sẽ vận hành theo cách ngược lại. Mỗi khi bạn lựa
+            chọn thực hiện một thói quen xấu, đó cũng là một lá phiếu dành cho
+            đặc tính. Tin tốt lành ở đây là bạn không cần phải là một người hoàn
+            hảo. Trong bất kỳ cuộc bầu cử nào, sẽ có những lá phiếu dành cho cả
+            hai phe. Bạn không cần một lá phiếu đồng thuận để dành chiến thắng
+            trong cuộc bầu cử; bạn chỉ cần sự ủng hộ của số đông.
+          </p>
+          <p class="para">
+            Cũng không có vấn đề gì nếu bạn dành một vài phiếu bầu cho một thói
+            quen xấu hoặc một thói quen không hiệu quả. Mục tiêu của bạn đơn
+            giản là chiếm đa số trong phần lớn thời gian.Những đặc tính mới yêu
+            cầu những xác thực mới. Nếu bạn vẫn tiếp tục giữ những phiếu bầu như
+            bạn vẫn luôn luôn làm, bạn sẽ chỉ có được những kết quả tương tự với
+            những kết quả mà bạn vẫn đang có. Nếu không có gì thay đổi, thì cũng
+            không có gì thay đổi trong tương lai.
+          </p>
+          <p class="para">
+            Quá trình hai bước chỉ đơn giản như dưới đây:1. Quyết định con người
+            mà bạn muốn trở thành. 2. Chứng minh nó với chính bản thân bạn bằng
+            những thắng lợi nhỏ. Bước đầu tiên là quyết định con người bạn muốn
+            trở thành. Nó đúng với bất kỳ cấp độ nào - cá nhân, đội nhóm - cộng
+            đồng - hay cả quốc gia.Bạn muốn đạt được điều gì? Những nguyên tắc
+            và giá trị của bạn là gì? Ai là người bạn mong muốn trở thành? Đây
+            là những câu hỏi lớn, và rất nhiều người không chắc chắn về việc
+            phải bắt đầu từ đâu - nhưng họ biết loại kết quả nào họ mong muốn:
+            có cơ bụng sáu múi, hoặc giảm bớt căng thẳng lo lắng, hoặc nhân đôi
+            lương hàng tháng.
+          </p>
+          <p class="para">
+            Điều này tốt thôi. Bắt đầu từ đó và bước thụt lùi dần từ những kết
+            quả mà bạn mong muốn có được về tới kiểu người có thể đạt được những
+            kết quả đó. Hãy hỏi bản thân câu hỏi, "Kiểu người như thế nào có thể
+            đạt được kết quả như tôi mong muốn?". Kiểu người như thế nào có thể
+            giảm được 40 pounds? Kiểu người như thế nào có thể học một ngoại ngữ
+            mới? Kiểu người như thế nào có thể khởi nghiệp thành công?
+          </p>
+          <p class="para">
+            Ví dụ, "Kiểu người như thế nào có thể viết được một cuốn sách?".
+            Hiển nhiên là một người có óc nhất quán và đang tin cậy. Bây giờ bạn
+            chuyển sự tập trung của bản thân từ việc viết ra một cuốn sách (dựa
+            trên mục tiêu) sang kiểu người có đầu óc nhất quán và tập trung (dựa
+            trên đặc tính). Quá trình này có thể dẫn tới những niềm tin kiểu
+            như:
+          </p>
+          <ul class="content__list">
+            <li class="content__list-item">
+              Tôi là một người giáo viên luôn đứng về phía sinh viên của mình.
+            </li>
+            <li class="content__list-item">
+              Tôi là một vị bác sĩ luôn kiên nhẫn dành thời gian cho và sự cảm
+              thông cho từng bệnh nhân của mình.
+            </li>
+            <li class="content__list-item">
+              Tôi là một người lãnh đạo luôn ủng hộ cấp dưới của mình.
+            </li>
+          </ul>
+          <p class="para">
+            Một khi bạn đã xác định được mẫu người mà bạn muốn trở thành, bạn có
+            thể bắt đầu bước những bước nhỏ để củng cố đặc tính mà bạn mong ước.
+            Một người bạn của tôi, cô ấy đã giảm được 100 pounds bằng việc tự
+            hỏi bản thân câu hỏi, "Một người khỏe mạnh sẽ làm những gì nhỉ?"
+            Suốt một ngày dài, cô ấy sẽ tự hỏi bản thân câu hỏi đó như một lời
+            chỉ dẫn. Một người khỏe mạnh thì sẽ đi bộ hay gọi taxi? Một người
+            khỏe mạnh thì sẽ gọi một cái bánh burrito hay một đĩa salad? Cô ấy
+            đã hình dung rằng nếu cô ấy hành xử như một người khỏe mạnh trong
+            một thời gian đủ lâu, dần dần cô ấy sẽ trở thành môt người như vậy.
+            Cô ấy đã đúng
+          </p>
+          <p class="para">
+            Khái niệm thói quen dựa trên đặc tính là phần giới thiệu đầu tiên
+            cho một đề tài quan trọng khác của cuốn sách này: vòng lặp phản hồi
+            [*Từ gốc: feedback loops]. Thói quen tạo nên đặc tính, và đặc tính
+            định hình thói quen. Đây là con đường hai chiều. Sự hình thành của
+            tất cả các thói quen là một vòng lặp phản hồi (khái niệm này chúng
+            ta sẽ tìm hiểu sâu hơn trong chương tiếp theo), nhưng có một việc
+            quan trọng ở đây là hãy để cho những giá trị, những nguyên tắc và
+            đặc tính điều khiển vòng lặp, hơn là để cho kết quả điều khiển.
+            Trọng tâm luôn luôn hướng về việc trở thành mẫu người mong muốn chứ
+            không phải là đạt được một kết quả nhất định nào đó.
+          </p>
+        </div>
+        <div class="content__page">
+          <h2 id="ly-do-that-su-tai-sao-thoi-quen-lai-quan-trong-den-vay">
+            LÍ DO THẬT SỰ TẠI SAO THÓI QUEN LẠI QUAN TRỌNG ĐẾN VẬY[*THE REAL
+            REASON HABITS MATTER]
+          </h2>
         </div>
       </div>
     </div>
