@@ -136,6 +136,11 @@ h2 {
   text-align: center;
   border-radius: 0.3rem;
 }
+@media screen and (max-width: 230px) {
+  .bookmark-bar__btn {
+    display: none;
+  }
+}
 .bookmark-bar__expand-icon {
   display: none;
 }
