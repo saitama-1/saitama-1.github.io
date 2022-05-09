@@ -11,166 +11,107 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="w3-container w3-code" id="w3css-cdn">
-      CDN: &lt;link rel="stylesheet"
-      href="https://www.w3schools.com/w3css/4/w3.css" /&gt;
-    </div>
+    <p>Sử dụng bố cục 1 hàng full width với w3-container</p>
     <div class="w3-container w3-red">
-      lớp chứa w3-container chỉ thêm padding 16px vào bất kỳ thẻ block nào
+      w3-container Sử dụng bố cục 1 hàng full width
     </div>
-    <br />
-    <div class="w3-container">
-      <h2>w3 responsive</h2>
-      <br />
-      <p>Các lớp chứa responsive</p>
-      <p>
-        Các lớp responsive phải được đặt trong w3-row hoặc w3-row-padding để có
-        thể responsive đầy đủ
-      </p>
-      <br />
-      <p>w3-row: lớp chứa các responsive class và không padding</p>
-      <p>w3-row-padding: lớp chứa các respnsive class và đệm trái phải 8px</p>
-      <p>w3-content: lớp chứa cho nội dung căn giữa có size cố định</p>
-      <br />
-      <p>Lớp ẩn hiện</p>
-      <p>w3-hide-small: ẩn nội dung trên màn nhỏ (nhỏ hơn 601px)</p>
-      <p>w3-hide-medium: ẩn nội dung trên màn trung bình</p>
-      <p>w3-hide-large: ẩn nội dung trên màn lớn (trên 992px)</p>
-      <br />
-      <p>Lớp định kích thước kết hợp với w3-col</p>
-      <p>l1 - l12: các cỡ respon cho màn lớn</p>
-      <p>m1 - m12: các cỡ respon cho màn trung bình</p>
-      <p>s1 - s12: các cỡ respon cho màn nhỏ</p>
-      <br />
-      <p>Hệ thống lưới</p>
-      <div class="w3-row">
-        <p>w3-row</p>
-        <div class="w3-half w3-red">
-          w3-half: chiếm 1/2 cửa sổ trên màn lớn và tb
-        </div>
-        <div class="w3-half w3-amber">
-          w3-half: chiếm 1/2 cửa sổ trên màn lớn và tb
-        </div>
+    <hr />
+    <p>Sử dụng bố cục 1 hàng nhiều cột rộng cao bằng nhau</p>
+    <div class="w3-cell-row">
+      <div class="w3-cell w3-red" style="width: 10%">
+        <div>nội dung</div>
+        <div>nội dung</div>
+        <div>nội dung</div>
       </div>
-      <div class="w3-row">
-        <p>w3-row</p>
-        <div class="w3-third w3-red">
-          w3-third: Chiếm 1/3 cửa sổ trên màn lớn và tb
-        </div>
-        <div class="w3-twothird w3-amber">
-          w3-twothird: Chiếm 2/3 cửa sổ trên màn lớn và tb
-        </div>
+      <div class="w3-cell w3-amber">
+        <div>nội dung</div>
+        <div>nội dung</div>
       </div>
-      <div class="w3-row">
-        <p>w3-row</p>
-        <div class="w3-quarter w3-red">
-          w3-quarter: Chiếm 1/4 trên màn lớn và tb
-        </div>
-        <div class="w3-threequarter w3-amber">
-          w3-threequarter: Chiếm 3/4 trên màn lớn và tb
-        </div>
-      </div>
-      <div class="w3-row">
-        <p>w3-row</p>
-        <div class="w3-col w3-red w3-border" style="width: 15rem">
-          w3-col: Chiếm 1 cột trong hệ thống lưới 12 cột với điều kiện đặt width
-          = ?px
-        </div>
-        <div class="w3-col w3-red w3-border" style="width: 15rem">
-          w3-col: Chiếm 1 cột trong hệ thống lưới 12 cột với điều kiện đặt width
-          = ?px
-        </div>
-        <div class="w3-col w3-red w3-border" style="width: 15rem">
-          w3-col: Chiếm 1 cột trong hệ thống lưới 12 cột với điều kiện đặt width
-          = ?px
-        </div>
-        <div class="w3-col w3-red w3-border" style="width: 15rem">
-          w3-col: Chiếm 1 cột trong hệ thống lưới 12 cột với điều kiện đặt width
-          = ?px
-        </div>
-        <div class="w3-col w3-red w3-border" style="width: 15rem">
-          w3-col: Chiếm 1 cột trong hệ thống lưới 12 cột với điều kiện đặt width
-          = ?px
-        </div>
-        <div class="w3-rest w3-amber w3-border">
-          w3-rest: Chiếm phần còn lại của chiều rộng cột
-        </div>
-        <div class="w3-rest w3-amber w3-border">
-          w3-rest: Chiếm phần còn lại của chiều rộng cột
-        </div>
-        <div class="w3-rest w3-amber w3-border">
-          w3-rest: Chiếm phần còn lại của chiều rộng cột
-        </div>
-        <div class="w3-rest w3-amber w3-border">
-          w3-rest: Chiếm phần còn lại của chiều rộng cột
-        </div>
-        <div class="w3-rest w3-amber w3-border">
-          w3-rest: Chiếm phần còn lại của chiều rộng cột
-        </div>
-      </div>
-      <div class="w3-row-padding">
-        <p>w3-row-padding</p>
-        <div class="w3-mobile w3-red w3-border">
-          w3-mobile: thết kế mobile first, hiển thị như một thẻ block trên các
-          thiết bị di động
-        </div>
-        <div class="w3-mobile w3-red w3-border">
-          w3-mobile: thết kế mobile first, hiển thị như một thẻ block trên các
-          thiết bị di động
-        </div>
-        <div class="w3-mobile w3-red w3-border">
-          w3-mobile: thết kế mobile first, hiển thị như một thẻ block trên các
-          thiết bị di động
-        </div>
-        <div class="w3-mobile w3-red w3-border">
-          w3-mobile: thết kế mobile first, hiển thị như một thẻ block trên các
-          thiết bị di động
-        </div>
-      </div>
-      <div class="w3-content" style="width: 300px">
-        <p>w3-content: căn giữa nội dung có kích thước cố định</p>
-        <div class="w3-quarter w3-red">
-          w3-quarter: Chiếm 1/4 trên màn lớn và tb
-        </div>
-        <div class="w3-threequarter w3-amber">
-          w3-threequarter: Chiếm 3/4 trên màn lớn và tb
-        </div>
+      <div class="w3-cell w3-blue">
+        <div>nội dung</div>
+        <div>nội dung</div>
+        <div>nội dung</div>
+        <div>nội dung</div>
+        <div>nội dung</div>
       </div>
     </div>
-    <div class="w3-container">
-      <div class="w3-hide-small">
-        <p>w3-hide-small: ẩn nội dung trên màn nhỏ hơn 601px</p>
-        <div class="w3-third w3-red">
-          w3-third: Chiếm 1/3 cửa sổ trên màn lớn và tb
-        </div>
-        <div class="w3-twothird w3-amber">
-          w3-twothird: Chiếm 2/3 cửa sổ trên màn lớn và tb
-        </div>
+    <hr />
+    <p>
+      Sử dụng bố cục 2 hàng với 1 hàng full width + 1 hàng chia cột + kết hợp
+      responsive
+    </p>
+    <div class="w3-cell-row w3-amber">Sử dụng 1 cell row</div>
+    <div class="w3-cell-row">
+      <div class="w3-cell w3-red w3-mobile">
+        <div>Nội dung trong cell row 2</div>
+        <div>nội dung</div>
       </div>
-      <div class="w3-hide-medium">
-        <p>w3-hide-medium: ẩn nội dung trên màn trung bình</p>
-        <div class="w3-third w3-red">
-          w3-third: Chiếm 1/3 cửa sổ trên màn lớn và tb
-        </div>
-        <div class="w3-twothird w3-amber">
-          w3-twothird: Chiếm 2/3 cửa sổ trên màn lớn và tb
-        </div>
+      <div class="w3-cell w3-blue w3-mobile">
+        <div>Nội dung trong cell row 2</div>
+        <div>nội dung</div>
+        <div>nội dung</div>
+        <div>nội dung</div>
       </div>
-      <div class="w3-hide-large">
-        <p>w3-hide-medium: ẩn nội dung trên màn lớn hơn 992px</p>
-        <div class="w3-third w3-red">
-          w3-third: Chiếm 1/3 cửa sổ trên màn lớn và tb
-        </div>
-        <div class="w3-twothird w3-amber">
-          w3-twothird: Chiếm 2/3 cửa sổ trên màn lớn và tb
-        </div>
+    </div>
+    <hr />
+    <p>
+      Sử dụng bố cục dạng cột phân chia chiều rộng nhưng chiều cao không phụ
+      thuộc lẫn nhau
+    </p>
+    <div class="w3-row">
+      <div class="w3-col w3-red m2">
+        Noi dung trong ther 1Noi dung trong ther 1Noi dung trong tther 1Noi dung
+        trong tther 1Noi dung trong tther 1Noi dung trong ther 1
       </div>
-
-      <div class="w3-row">
-        <p>w3-row</p>
-        <div class="w3-col l1 w3-red">l1: chiếm 1 cột trên màn hình lớn</div>
-        <div class="w3-col l2 w3-amber">l2: chiếm 2 cột trên màn hình lớn</div>
-        <div class="w3-col l3 w3-red">l3: chiếm 3 cột trên màn hình lớn</div>
+      <div class="w3-col w3-blue m5">
+        noi dung trong the 2noi dung trong the 2noi dung trong the 2noi dung
+        trong the 2noi dung trong the 2noi dung trong the 2noi dung trong the
+        2noi dung trong the 2noi dung trong the 2noi dung trong the 2noi dung
+        trong the 2noi dung trong the 2noi dung tronoi dung trong the 2noi dung
+        trong the 2noi dung trong the 2noi dung trong the 2noi dung trong the
+        2noi dung trong the 2noi dung trong the 2noi dung tronoi dung trong the
+        2noi dung trong the 2noi dung trong the 2noi dung trong the 2noi dung
+        trong the 2noi dung trong the 2noi dung trong the 2noi dung trong the
+        2noi dung trong the 2noi dung trong the 2noi dung trong the 2noi dung
+        trong the 2noi dung trong the 2
+      </div>
+      <div class="w3-col w3-amber m5">
+        noi dung trong the 3noi dung trong the 3 noi dung trong the 3
+      </div>
+    </div>
+    <hr />
+    <p>
+      Sử dụng bố cục các cột đều chiều cao kết hợp với resposive từng cột trên
+      từng loại màn hình
+    </p>
+    <div class="w3-cell-row w3-red w3-hide-large">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi velit enim
+      repudiandae suscipit officia iure commodi porro eligendi, nostrum
+      doloremque repellendus est dolores ea, maiores minima odit earum pariatur
+      alias?
+    </div>
+    <div class="w3-cell-row w3-blue w3-hide-medium w3-hide-large">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi velit enim
+      repudiandae suscipit officia iure commodi porro eligendi, nostrum
+      doloremque repellendus est dolores ea, maiores minima odit earum pariatur
+      alias?
+    </div>
+    <div class="w3-cell-row">
+      <div class="w3-cell w3-red w3-hide-small w3-hide-medium">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis impedit
+        itaque adipisci cupiditate possimus minima nesciunt odio sint expedita,
+        quas tenetur dignissimos vero esse odit quia dolorem illum at nisi.
+      </div>
+      <div class="w3-cell w3-blue w3-hide-small">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit
+        reprehenderit expedita laudantium amet ipsa, obcaecati asperiores esse
+        eligendi doloremque aliquam. Aperiam, iusto fugit! Id blanditiis libero
+        distinctio dolorum? Ut?
+      </div>
+      <div class="w3-cell w3-amber">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+        quibusdam aliquam eos, neque quam enim obcaecati, a molestias eius rem
+        cumque architecto eligendi beatae et incidunt nobis provident saepe ab!
       </div>
     </div>
   </body>
