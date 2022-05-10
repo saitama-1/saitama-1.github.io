@@ -91,7 +91,7 @@ body {
 .style-card-para {
   font-size: 0.8em;
   color: var(--neutral-Transparent-white);
-  min-height: 126px;
+  /* min-height: 126px; */
 }
 .style-card-button {
   color: var(--neutral-Very-light-gray);
