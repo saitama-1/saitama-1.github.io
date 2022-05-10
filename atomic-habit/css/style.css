@@ -32,6 +32,14 @@ h2 {
   font-size: 1.5rem;
   margin-top: 2rem;
 }
+figure {
+  margin-bottom: 2rem;
+}
+figcaption {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+}
 .container {
   position: absolute;
   top: 0;
@@ -91,6 +99,12 @@ h2 {
   list-style: disc inside;
   padding: 0 0 0 2rem;
   text-align: justify;
+}
+.content__order-list {
+  padding: 0 0 0 2rem;
+  text-align: justify;
+  list-style-type: decimal;
+  margin-left: 2rem;
 }
 .content__page p {
   margin: 0 0 5px 0;

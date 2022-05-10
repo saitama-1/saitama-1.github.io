@@ -1,0 +1,115 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+:root {
+  --primary-Bright-orange: hsl(31, 77%, 52%);
+  --primary-Dark-cyan: hsl(184, 100%, 22%);
+  --primary-Very-dark-cyan: hsl(179, 100%, 13%);
+  --neutral-Transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+  --neutral-Very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: var(--neutral-Very-light-gray);
+}
+
+.style-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--neutral-Very-light-gray);
+  overflow: auto;
+}
+.style-middle-box {
+  max-width: 60rem;
+  min-height: 50rem;
+  z-index: 2;
+}
+.style-cell-sedan {
+  background-color: var(--primary-Bright-orange);
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+.style-cell-suv {
+  background-color: var(--primary-Dark-cyan);
+}
+.style-cell-lux {
+  background-color: var(--primary-Very-dark-cyan);
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+@media screen and (max-width: 600px) {
+  .style-cell-sedan {
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+  .style-cell-lux {
+    border-radius: 0 0 0.8rem 0.8rem;
+  }
+}
+.style-card-header {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--neutral-Very-light-gray);
+}
+.style-card-para {
+  font-size: 0.8em;
+  color: var(--neutral-Transparent-white);
+  min-height: 126px;
+}
+.style-card-button {
+  color: var(--neutral-Very-light-gray);
+}
+.style-card-button-sedan:hover {
+  color: var(--primary-Bright-orange) !important;
+}
+.style-card-button-suv:hover {
+  color: var(--primary-Dark-cyan) !important;
+}
+.style-card-button-lux:hover {
+  color: var(--primary-Very-dark-cyan) !important;
+}
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: initial;
+}

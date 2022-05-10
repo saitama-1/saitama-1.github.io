@@ -13,3 +13,14 @@ body {
 .font {
   font-size: 10vw;
 }
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: green;
+}
+.middle {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  border-radius: 1rem;
+}

@@ -10,3 +10,7 @@
 .text-indent {
   text-indent: 0.5rem;
 }
+.image-center {
+  display: block;
+  margin: 2rem auto;
+}
